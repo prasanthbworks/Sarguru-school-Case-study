@@ -175,10 +175,11 @@ of V2 work.
 
 Carried forward honestly rather than closed on paper.
 
-- **Two content figures are confirmed verbally but not in writing.** Both were
-  raised with the school during testing and confirmed before release. On a site
-  whose whole purpose is credibility, a verbal assurance is a weaker artifact
-  than it should be, and getting it in writing is outstanding.
+- **Two content figures rest on the school's own account of itself.** Both
+  were supplied at requirements stage, checked against public education
+  directories during testing, raised with the school where they differed, and
+  confirmed before release. The school is the source of record for its own
+  history, but the discrepancy is documented rather than buried.
 - **Enquiry notifications route to a personal address.** The free tier of the
   form service locks the recipient to the account owner. An interim forwarding
   rule is planned; the durable fix is rebuilding the form under a school-owned
@@ -188,11 +189,12 @@ Carried forward honestly rather than closed on paper.
   this project transfers, those three need migrating or the school loses
   control of its own site. This is a governance risk, and it is named here
   because a handover that omits it is not a handover.
-- **The editor question is still open.** Every content change currently
-  requires editing HTML and pushing to the repository. If the school expects to
-  post notices itself, this architecture is wrong for it and a builder would be
-  the honest recommendation. If it updates twice a year, this is fine. Nobody
-  has confirmed which is true.
+- **Content maintenance has an interim owner and no successor.** At
+  requirements stage the school confirmed updates would be handled from my side
+  for now, which is what makes the static architecture defensible. What has not
+  been decided is what happens when that arrangement ends. If the school ever
+  needs to publish notices itself, this architecture is the wrong fit and a
+  builder would be the honest recommendation.
 - **Backlog:** a custom 404 page, and a phone-validation defect on iOS that
   lives inside the form provider's embed rather than in this codebase.
 
@@ -204,10 +206,12 @@ that during testing, when the copy was already written and approved. Comparing
 what a client tells you against what public records say is a twenty-minute task
 at requirements stage and a credibility problem at release.
 
-**Ask "who edits this after I leave?" in the first conversation.** It is the
-question that determines the entire architecture, and I asked it late. If the
-answer had been "the office staff, weekly," a static site would have been the
-wrong recommendation and I would have said so.
+**Ask "who edits this after I leave?" rather than "who edits this now?"** I did
+ask the maintenance question at requirements stage, and the answer — my side,
+for now — is what made a static site defensible. What I did not ask was what
+happens when "for now" ends. The architecture depends on an arrangement with no
+end date and no successor, and that is the weaker half of a question I thought
+I had covered.
 
 **Inspect the domain's DNS zone before planning the cutover.** The live mail
 tenant should have been a known input to the release plan, not a discovery
@@ -257,6 +261,7 @@ evidence.*
 
 | Document | What it holds |
 |---|---|
+| [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md) | Discovery record as captured in July 2026, and what shipped against it |
 | [docs/DECISION-LOG.md](docs/DECISION-LOG.md) | Thirteen decisions: options considered, reasoning, trade-off accepted |
 | [docs/VALIDATION.md](docs/VALIDATION.md) | Test approach, coverage, results, and what the testing does not cover |
 | [docs/SOLUTION-DESIGN.md](docs/SOLUTION-DESIGN.md) | As-built system documentation, compiled after implementation |
