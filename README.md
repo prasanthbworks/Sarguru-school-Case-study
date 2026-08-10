@@ -225,20 +225,6 @@ acceptance, even informal, would have closed the loop properly.
 **Instrument before launching.** Without analytics on the old site, the stated
 objective became unmeasurable at exactly the moment it mattered.
 
-## Why this is in a data portfolio
-
-The obvious objection is that a static school website is not analytics work.
-Fair. What transfers is the part that is not HTML: taking a vague request and
-finding the actual business problem, controlling scope against pressure to
-expand, making decisions with trade-offs I can still defend, testing my own
-output rather than trusting it, discovering an undocumented production
-dependency before breaking it, and writing the whole thing down so somebody
-else could take it over.
-
-Those are the same instincts a data pipeline needs. The technology is
-different; the judgement is not.
-
----
 
 ## Repository
 
