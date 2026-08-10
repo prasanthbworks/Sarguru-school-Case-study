@@ -127,12 +127,13 @@ rather than assumed to pass.
 parent responds to it, and no parent was observed using it. The UX review cases
 are my judgement, which is the least reliable evidence in this document.
 
-**Claim verification was manual and depends on the client's word.** Two
-figures the school supplied did not match what public education directories
-record. Both were raised with the school rather than published unchecked or
-silently altered, and both were confirmed before release. That is the right
-process, but the evidence is a verbal confirmation and not a document — which
-is a weaker artifact than it should be for claims a parent may act on.
+**Claim verification depends on the client as the source of record.** Two
+figures the school supplied at requirements stage did not match what public
+education directories record. Both were raised rather than published unchecked
+or silently altered, and both were confirmed before release. The original
+figures are captured in the dated requirements record, so there is a written
+trail of what was supplied and when — but the school remains the only authority
+for its own history, and that limit is worth stating.
 
 **No production monitoring.** Nothing currently alerts if the site goes down,
 if the form stops delivering, or if enquiries stop arriving.
